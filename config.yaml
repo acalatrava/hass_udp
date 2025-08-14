@@ -1,0 +1,23 @@
+name: UDP to HA Webhook
+version: "0.1.0"
+slug: udp2ha
+description: Listen on UDP and forward payloads to a Home Assistant webhook (filters bitlength, dedups by code).
+arch:
+  - aarch64
+  - armv7
+  - amd64
+host_network: true
+startup: services
+init: false
+options:
+  port: 9999
+  webhook_id: udp_9999
+  dedup_seconds: 2
+  require_bitlength: 24
+  base64_input: true
+schema:
+  port: int
+  webhook_id: str
+  dedup_seconds: float
+  require_bitlength: "int|null"
+  base64_input: bool
