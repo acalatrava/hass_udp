@@ -19,5 +19,5 @@ schema:
   port: int
   webhook_id: str
   dedup_seconds: float
-  require_bitlength: "int|null"
+  require_bitlength: "int"
   base64_input: bool
