@@ -1,5 +1,5 @@
 name: UDP to HA Webhook
-version: "0.1.0"
+version: "0.1.1"
 slug: udp2ha
 description: Listen on UDP and forward payloads to a Home Assistant webhook (filters bitlength, dedups by code).
 arch:
