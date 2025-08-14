@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: UDP to HA test
+url: "https://github.com/acalatrava/hass_udp"
+maintainer: Antonio Calatrava
